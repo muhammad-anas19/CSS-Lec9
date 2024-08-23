@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: aqua;
+            border: 1px solid black;
+            display: flex;
+            width: 200px;
+            
+        }
+        #boxleft {
+            background-color: yellow;
+            margin: 3px;
+            padding: 2px;
+            display: flex;
+            flex-direction: column;
+        }
+        #boxright {
+            margin: 3px;
+            padding: 2px;
+        }
+        p {
+            border: 1px solid red;
+        }
+        /* till now >640px case solves */
+        @media (max-width: 640px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="boxleft">
+            <p>test1</p>
+            <p>text2</p>
+        </div>
+        <div id="boxright">
+            <img src="Me.jpg" alt="My own image" width="125px" height="100px">
+        </div>
+    </div>
+</body>
+</html>
